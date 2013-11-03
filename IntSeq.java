@@ -1,8 +1,8 @@
 
 public class IntSeq	extends Seq {
 
-	private int numbersArray[];
-	private int length;
+	protected int numbersArray[];
+	protected int length;
 
 
 
@@ -31,5 +31,29 @@ public class IntSeq	extends Seq {
 		return completeText;
 	}
 
+
+	public int posMax(){
+
+		int position = -1;
+		int temp;
+
+		if(length == 0){
+			return position;
+		}
+
+		temp = numbersArray[0];
+		position = 0;
+
+		for(int i = 0; i < length; i++){
+
+			if(numbersArray[i] > temp){
+				temp = numbersArray[i];
+				position = i;
+			}
+
+		}
+
+		return position;
+	}
 
 }
