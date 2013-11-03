@@ -5,6 +5,9 @@ public class IntSeq	extends Seq {
 	private int length;
 
 
+
+	// constructor
+	// @params numbers array
 	public IntSeq(int ... numbers){
 		numbersArray = numbers;
 		length = numbers.length;
@@ -12,6 +15,7 @@ public class IntSeq	extends Seq {
 		return;
 	}
 
+	// print method
 	public String toString(){
 		String completeText = "[";
 
