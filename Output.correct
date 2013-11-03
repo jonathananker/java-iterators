@@ -1,0 +1,98 @@
+i1:[0:]:
+(Seq)i1 instanceof CharSeq:false:
+(Seq)i1 instanceof IntSeq:true:
+i2:[0:]:
+(Seq)i2 instanceof CharSeq:false:
+(Seq)i2 instanceof IntSeq:true:
+i3:[1: 88]:
+(Seq)i3 instanceof CharSeq:false:
+(Seq)i3 instanceof IntSeq:true:
+i4:[2: 97 55]:
+(Seq)i4 instanceof CharSeq:false:
+(Seq)i4 instanceof IntSeq:true:
+i5:[5: 102 103 101 107 109]:
+(Seq)i5 instanceof CharSeq:false:
+(Seq)i5 instanceof IntSeq:true:
+i6:[4: 41 42 43 44]:
+(Seq)i6 instanceof CharSeq:false:
+(Seq)i6 instanceof IntSeq:true:
+s1:{3: "abc"}:
+(Seq)s1 instanceof CharSeq:true:
+(Seq)s1 instanceof IntSeq:false:
+s2:{0: ""}:
+(Seq)s2 instanceof CharSeq:true:
+(Seq)s2 instanceof IntSeq:false:
+s3:{36: "abcdefghijklmnopqrstuvwxyz0123456789"}:
+(Seq)s3 instanceof CharSeq:true:
+(Seq)s3 instanceof IntSeq:false:
+s4:{24: "abcdefghijklmnopqrstuvwx"}:
+(Seq)s4 instanceof CharSeq:true:
+(Seq)s4 instanceof IntSeq:false:
+s5:{3: "XYZ"}:
+(Seq)s5 instanceof CharSeq:true:
+(Seq)s5 instanceof IntSeq:false:
+s6:{5: "a123b"}:
+(Seq)s6 instanceof CharSeq:true:
+(Seq)s6 instanceof IntSeq:false:
+i1:[0:]:
+(Seq)i1 instanceof CharSeq:false:
+(Seq)i1 instanceof IntSeq:true:
+i2:[0:]:
+(Seq)i2 instanceof CharSeq:false:
+(Seq)i2 instanceof IntSeq:true:
+i3:[1: 88]:
+(Seq)i3 instanceof CharSeq:false:
+(Seq)i3 instanceof IntSeq:true:
+i4:[2: 97 55]:
+(Seq)i4 instanceof CharSeq:false:
+(Seq)i4 instanceof IntSeq:true:
+i5:[5: 102 103 101 107 109]:
+(Seq)i5 instanceof CharSeq:false:
+(Seq)i5 instanceof IntSeq:true:
+i6:[4: 41 42 43 44]:
+(Seq)i6 instanceof CharSeq:false:
+(Seq)i6 instanceof IntSeq:true:
+s1:{3: "abc"}:
+(Seq)s1 instanceof CharSeq:true:
+(Seq)s1 instanceof IntSeq:false:
+s2:{0: ""}:
+(Seq)s2 instanceof CharSeq:true:
+(Seq)s2 instanceof IntSeq:false:
+s3:{36: "abcdefghijklmnopqrstuvwxyz0123456789"}:
+(Seq)s3 instanceof CharSeq:true:
+(Seq)s3 instanceof IntSeq:false:
+s4:{24: "abcdefghijklmnopqrstuvwx"}:
+(Seq)s4 instanceof CharSeq:true:
+(Seq)s4 instanceof IntSeq:false:
+s5:{3: "XYZ"}:
+(Seq)s5 instanceof CharSeq:true:
+(Seq)s5 instanceof IntSeq:false:
+s6:{5: "a123b"}:
+(Seq)s6 instanceof CharSeq:true:
+(Seq)s6 instanceof IntSeq:false:
+x:{36: "abcdefghijklmnopqrstuvwxyz0123456789"}:
+(Seq)x instanceof CharSeq:true:
+(Seq)x instanceof IntSeq:false:
+x:[2: 97 55]:
+(Seq)x instanceof CharSeq:false:
+(Seq)x instanceof IntSeq:true:
+b[k%b.length]:{5: "first"}:
+b[k%b.length]:[3: 77 78 79]:
+b[k%b.length]:[2: 81 82]:
+b[k%b.length]:{6: "middle"}:
+b[k%b.length]:[0:]:
+b[k%b.length]:[11: 10 1 2 3 4 5 10 -1 -2 -3 -4]:
+b[k%b.length]:{0: ""}:
+b[k%b.length]:{4: "last"}:
+b[k%b.length]:{5: "first"}:
+b[k%b.length]:[3: 77 78 79]:
+b[k%b.length]:[2: 81 82]:
+b[k%b.length]:{6: "middle"}:
+b[k%b.length]:[0:]:
+b[k%b.length]:[11: 10 1 2 3 4 5 10 -1 -2 -3 -4]:
+b[k%b.length]:{0: ""}:
+b[k%b.length]:{4: "last"}:
+s11:{5: "abcde"}:
+s11:{5: "abcde"}:
+s12:{5: "fghij"}:
+s11:{5: "abcde"}:
