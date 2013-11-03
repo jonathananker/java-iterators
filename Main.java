@@ -131,6 +131,27 @@ public class Main {
         CharSeq s12 = new CharSeq(m);
         System.out.println( "s12" + ":" + (s12) + ":");
         System.out.println( "s11" + ":" + (s11) + ":"); // should still show "abcde"
+        System.out.println( "i1.posMax()" + ":" + (i1.posMax()) + ":");
+        System.out.println( "i2.posMax()" + ":" + (i2.posMax()) + ":");
+        System.out.println( "i3.posMax()" + ":" + (i3.posMax()) + ":");
+        System.out.println( "i4.posMax()" + ":" + (i4.posMax()) + ":");
+        System.out.println( "i5.posMax()" + ":" + (i5.posMax()) + ":");
+        System.out.println( "i6.posMax()" + ":" + (i6.posMax()) + ":");
+        System.out.println( "s1.posMax()" + ":" + (s1.posMax()) + ":");
+        System.out.println( "s2.posMax()" + ":" + (s2.posMax()) + ":");
+        System.out.println( "s3.posMax()" + ":" + (s3.posMax()) + ":");
+        System.out.println( "s4.posMax()" + ":" + (s4.posMax()) + ":");
+        System.out.println( "s5.posMax()" + ":" + (s5.posMax()) + ":");
+        System.out.println( "s6.posMax()" + ":" + (s6.posMax()) + ":");
+        for (int k = 0; k < 2*b.length; k++) {
+            System.out.println( "b[k%b.length].posMax()" + ":" + (b[k%b.length].posMax()) + ":");
+        }
+        System.out.println( "(new CharSeq( \"abcbabababababdbababdbadbaddbabad\" )).posMax()" + ":" + ((new CharSeq( "abcbabababababdbababdbadbaddbabad" )).posMax()) + ":");
+        System.out.println( "(new CharSeq( \"abcbabababababdbababdbadbaddbabade\")).posMax()" + ":" + ((new CharSeq( "abcbabababababdbababdbadbaddbabade")).posMax()) + ":");
+        System.out.println( "(new CharSeq(\"fabcbabababababdbababdbadbaddbabade\")).posMax()" + ":" + ((new CharSeq("fabcbabababababdbababdbadbaddbabade")).posMax()) + ":");
+        System.out.println( "(new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6) ).posMax()" + ":" + ((new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6) ).posMax()) + ":");
+        System.out.println( "(new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()" + ":" + ((new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()) + ":");
+        System.out.println( "(new IntSeq(9, 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()" + ":" + ((new IntSeq(9, 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()) + ":");
         System.exit(0);
     }
 }
