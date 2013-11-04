@@ -13,6 +13,7 @@ public class IntSeqIt{
 
 	}
 
+	//uses length and position members to determine next value
 	public boolean hasNext(){
 
 		if(position < theSequence.length){
@@ -23,6 +24,7 @@ public class IntSeqIt{
 		}
 	}
 
+	//returns current character and advance forward
 	public int next(){
 
 		int element;
@@ -33,7 +35,7 @@ public class IntSeqIt{
 			return element;
 		}
 		else{
-			System.err.println("Attempted to next() past final element.");
+			System.err.println("IntSeqIt called past end");
 			System.exit(1);
 			return 0;
 		}

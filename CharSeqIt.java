@@ -31,7 +31,7 @@ public class CharSeqIt{
 			return element;
 		}
 		else{
-			System.err.println("Attempted to next() past final element.");
+			System.err.println("CharSeqIt called past end");
 			System.exit(1);
 			return 'n';
 		}

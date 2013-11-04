@@ -27,6 +27,7 @@ public class CharSeq extends Seq{
 	}
 
 
+	//compares characters using the integer > operators
 	public int posMax(){
 
 		int position = -1;

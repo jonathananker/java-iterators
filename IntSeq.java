@@ -31,7 +31,7 @@ public class IntSeq	extends Seq {
 		return completeText;
 	}
 
-
+	//compares int values in array
 	public int posMax(){
 
 		int position = -1;
