@@ -1,0 +1,4 @@
+test of calling IntSeqIt too many times
+ii.next():51:
+ii.next():52:
+IntSeqIt called past end

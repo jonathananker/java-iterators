@@ -1,0 +1,5 @@
+test of calling CharSeqIt too many times
+si.next():c:
+si.next():a:
+si.next():t:
+CharSeqIt called past end

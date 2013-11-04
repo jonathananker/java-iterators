@@ -1,9 +1,32 @@
 /* *** This file is given as part of the programming assignment. *** */
 
 public class Main {
-
     public static void main(String [] args) {
-
+        if( args.length > 0 ) {
+  System.out.println("test of calling "+args[0]
+               +" too many times");
+         if( args[0].equals("CharSeqIt") ) {
+          CharSeqIt si = new CharSeqIt(new CharSeq("cat"));
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+      System.out.println( "si.next()" + ":" + (si.next()) + ":");
+                }
+         else if( args[0].equals("IntSeqIt") ) {
+          IntSeqIt ii = new IntSeqIt(new IntSeq(51, 52));
+      System.out.println( "ii.next()" + ":" + (ii.next()) + ":");
+      System.out.println( "ii.next()" + ":" + (ii.next()) + ":");
+      System.out.println( "ii.next()" + ":" + (ii.next()) + ":");
+      System.out.println( "ii.next()" + ":" + (ii.next()) + ":");
+                }
+         else {
+      System.err.println("args[0] Oops "+args[0]);
+      System.exit(3);
+                }
+  System.exit(2); // should exit before this one.
+ }
     // instantiate some elements
     IntSeq i1 = new IntSeq();
     IntSeq i2 = new IntSeq();
@@ -152,6 +175,153 @@ public class Main {
         System.out.println( "(new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6) ).posMax()" + ":" + ((new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6) ).posMax()) + ":");
         System.out.println( "(new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()" + ":" + ((new IntSeq( 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()) + ":");
         System.out.println( "(new IntSeq(9, 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()" + ":" + ((new IntSeq(9, 1, 2, 2, 6, 3, 4, 3, 2, 2, 5, 6, 7)).posMax()) + ":");
+        // iterators
+        System.out.print( "myprints(s1)" + ":"); 
+             myprints(s1); 
+             System.out.println(":");
+        System.out.print( "myprints(s2)" + ":"); 
+             myprints(s2); 
+             System.out.println(":");
+        System.out.print( "myprints(s3)" + ":"); 
+             myprints(s3); 
+             System.out.println(":");
+        System.out.print( "myprints(s4)" + ":"); 
+             myprints(s4); 
+             System.out.println(":");
+        System.out.print( "myprints(s5)" + ":"); 
+             myprints(s5); 
+             System.out.println(":");
+        System.out.print( "myprints(s6)" + ":"); 
+             myprints(s6); 
+             System.out.println(":");
+        System.out.print( "myprinti(i1)" + ":"); 
+             myprinti(i1); 
+             System.out.println(":");
+        System.out.print( "myprinti(i2)" + ":"); 
+             myprinti(i2); 
+             System.out.println(":");
+        System.out.print( "myprinti(i3)" + ":"); 
+             myprinti(i3); 
+             System.out.println(":");
+        System.out.print( "myprinti(i4)" + ":"); 
+             myprinti(i4); 
+             System.out.println(":");
+        System.out.print( "myprinti(i5)" + ":"); 
+             myprinti(i5); 
+             System.out.println(":");
+        System.out.print( "myprinti(i6)" + ":"); 
+             myprinti(i6); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s1,s1)" + ":"); 
+             mycrosss(s1,s1); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s1,s2)" + ":"); 
+             mycrosss(s1,s2); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s2,s2)" + ":"); 
+             mycrosss(s2,s2); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s5,s4)" + ":"); 
+             mycrosss(s5,s4); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s5,s6)" + ":"); 
+             mycrosss(s5,s6); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s6,s6)" + ":"); 
+             mycrosss(s6,s6); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s1,s3)" + ":"); 
+             mycrosss(s1,s3); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s3,s3)" + ":"); 
+             mycrosss(s3,s3); 
+             System.out.println(":");
+        System.out.print( "mycrosss(s3,s3)" + ":"); 
+             mycrosss(s3,s3); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i1,i3)" + ":"); 
+             mycrossi(i1,i3); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i3,i1)" + ":"); 
+             mycrossi(i3,i1); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i1,i1)" + ":"); 
+             mycrossi(i1,i1); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i6,i1)" + ":"); 
+             mycrossi(i6,i1); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i1,i6)" + ":"); 
+             mycrossi(i1,i6); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i2,i3)" + ":"); 
+             mycrossi(i2,i3); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i3,i2)" + ":"); 
+             mycrossi(i3,i2); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i1,i5)" + ":"); 
+             mycrossi(i1,i5); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i4,i5)" + ":"); 
+             mycrossi(i4,i5); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i4,i4)" + ":"); 
+             mycrossi(i4,i4); 
+             System.out.println(":");
+        System.out.print( "mycrossi(i5,i5)" + ":"); 
+             mycrossi(i5,i5); 
+             System.out.println(":");
+        System.out.println( "CharSeqUser.posMax1(s1)" + ":" + (CharSeqUser.posMax1(s1)) + ":");
+        System.out.println( "CharSeqUser.posMax1(s2)" + ":" + (CharSeqUser.posMax1(s2)) + ":");
+        System.out.println( "CharSeqUser.posMax1(s3)" + ":" + (CharSeqUser.posMax1(s3)) + ":");
+        System.out.println( "CharSeqUser.posMax1(s4)" + ":" + (CharSeqUser.posMax1(s4)) + ":");
+        System.out.println( "CharSeqUser.posMax1(s5)" + ":" + (CharSeqUser.posMax1(s5)) + ":");
+        System.out.println( "CharSeqUser.posMax1(s6)" + ":" + (CharSeqUser.posMax1(s6)) + ":");
         System.exit(0);
+    }
+    private static void myprints(CharSeq s) {
+        CharSeqIt si = new CharSeqIt(s);
+        while( si.hasNext() ) {
+            System.out.print(si.next() + " ");
+        }
+    }
+    private static void myprinti(IntSeq i) {
+        IntSeqIt ii = new IntSeqIt(i);
+        while( ii.hasNext() ) {
+            System.out.print(ii.next() + " ");
+        }
+    }
+    private static void mycrosss(CharSeq s1, CharSeq s2) {
+        CharSeqIt si1 = new CharSeqIt(s1);
+        boolean first = true;
+        while ( si1.hasNext() ) {
+            char p1 = si1.next();
+            CharSeqIt si2 = new CharSeqIt(s2);
+            while ( si2.hasNext() ) {
+                char p2 = si2.next();
+                if ( first ) {
+                    first = false;
+                    System.out.println();
+                }
+                System.out.println("   " + p1 + " " + p2);
+            }
+        }
+    }
+    private static void mycrossi(IntSeq i1, IntSeq i2) {
+        IntSeqIt ii1 = new IntSeqIt(i1);
+        boolean first = true;
+        while ( ii1.hasNext() ) {
+            int p1 = ii1.next();
+            IntSeqIt ii2 = new IntSeqIt(i2);
+            while ( ii2.hasNext() ) {
+                int p2 = ii2.next();
+                if ( first ) {
+                    first = false;
+                    System.out.println();
+                }
+                System.out.println("   " + p1 + " " + p2);
+            }
+        }
     }
 }

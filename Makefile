@@ -2,6 +2,10 @@ SHELL  = /bin/sh
 
 YO     = Output.your
 YC     = Output.correct
+YO1    = Output.your1
+YC1    = Output.correct1
+YO2    = Output.your2
+YC2    = Output.correct2
 
 # note that make will always retranslate all needed .java files,
 # but that's OK since translation for this program is quick.
@@ -33,15 +37,25 @@ trans:
 run: trans
 	java Main > $(YO) 2>&1
 	diff $(YC) $(YO)
+	@echo ... testing what happens when iterator next is called too much
+	-if java Main CharSeqIt > $(YO1) 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+	diff $(YC1) $(YO1)
+	-if java Main IntSeqIt > $(YO2) 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+	diff $(YC2) $(YO2)
 
 # like "make run", but use a nicer diff.
 runv: trans
 	java Main > $(YO) 2>&1
 	cmp -s $(YC) $(YO) || tkdiff $(YC) $(YO)
+	@echo ... testing what happens when iterator next is called too much
+	-if java Main CharSeqIt > $(YO1) 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+	cmp -s $(YC1) $(YO1) || tkdiff $(YC1) $(YO1)
+	-if java Main IntSeqIt > $(YO2) 2>&1; then echo "wrong exit status"; else echo "OK"; fi
+	cmp -s $(YC2) $(YO2) || tkdiff $(YC2) $(YO2)
 
 # invoke via "make clean".
 clean:
-	/bin/rm -f *.class *~ $(YO)
+	/bin/rm -f *.class *~ $(YO) $(YO1) $(YO2)
 
 # just do `make remake' instead of `make clean; make'
 remake:	clean trans
